@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="first project, html, css, javascript, the taco shop, "
+    />
+    <meta name="description" content="Contact information for the Taco shop" />
+    <meta http-equiv="refresh" content="60" />
+    <meta name="author" content="Ian Wanjala" />
+    <link rel="icon" href="/img-contact/2515225.png" type="png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Get in Touch</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Contact Us</h1>
+      <nav class="header__nav" aria-label="primary navigation3">
+        <ul class="header__ul">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#theMenu">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <figure>
+        <img
+          src="/img/tacos_close_up_1000x649.png"
+          alt="Taco Image Goes Here"
+          title="Close up tacos!"
+          loading="lazy"
+          width="1000"
+          height="649"
+        />
+        <figcaption class="offscreen">Mexican Tacos</figcaption>
+      </figure>
+    </section>
+    <main class="main">
+      <article class="main__article">
+        <h2>Our Location</h2>
+        <address>555 Taco Temptation Lane, Suite T</address>
+        <address>Kansas City: MO 55555-5555</address>
+        <br />
+        <address>Phone: <a href="tel:555-555-5555">555-555-5555</a></address>
+        <!-- <br /> -->
+        <p><a href="#">Back to Top</a></p>
+      </article>
+      <article class="main__article contact">
+        <h2 class="contact__h2">Our Contact Form</h2>
+        <form
+          action="https://httpbin.org/get"
+          method="get"
+          class="contact__form"
+        >
+          <fieldset class="contact__fieldset">
+            <legend class="offscreen">Send Us a Message</legend>
+            <p class="contact__p">
+              <label class="contact__label" for="name">Name</label>
+              <input
+                class="contact__input"
+                type="text"
+                name="fullNames"
+                id="name"
+                placeholder="John Doe"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p class="contact__p">
+              <label class="contact__label" for="email">Email</label>
+              <input
+                class="contact__input"
+                type="email"
+                name="emailAddress"
+                id="email"
+                placeholder="John@gmail.com"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p class="contact__p">
+              <label class="contact__label" for="message">Your Message: </label>
+              <textarea
+                class="contact__textarea"
+                name="message"
+                id="message"
+                cols="40"
+                rows="10"
+                placeholder="Type Your Message Here"
+              ></textarea>
+            </p>
+            <button class="contact__button" type="submit">Send</button>
+            <button class="contact__button" type="reset">Reset</button>
+          </fieldset>
+        </form>
+      </article>
+    </main>
+    <footer class="footer">
+      <p class="contact__p">
+        <span class="nowrap">Copyright&copy;</span
+        ><span class="nowrap">The Little Taco Shop</span>
+      </p>
+    </footer>
+  </body>
+</html>
